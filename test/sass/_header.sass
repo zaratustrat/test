@@ -76,21 +76,29 @@
   color: black  
   font-size: 18px 
   font-weight: bold
- &-dropdown 
+ &-dropdown, &-dropdown-2 
   display: flex
   align-items: center
   justify-content: center
   background-color: rgba(#3591c8, 0.52)
-  width: 194px
-  height: 189px
-  &__child 
+  &__child, &__child2 
    display: flex
-   flex-direction: column   
+   flex-direction: column
+     
    a
     color: white 
     font-size: 14px 
-    line-height: 30px 
+    margin-bottom: 15px 
     font-weight: normal
+ &-dropdown 
+  width: 194px
+  height: 189px 
+ &-dropdown-2 
+  width: 239px 
+  height: 253px
+ &-dropdown__child2
+  width: 181px 
+  height: 213px      
  &-sentense
    padding-left: 330px 
    max-width: 1352px 
