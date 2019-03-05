@@ -29,43 +29,48 @@
               <div class="header-icon__instagram">
                 <a href="#"><img src="img/header/icon4.png" alt="instagram"></a>
               </div>
-
             </div>
-          </div> 
+          </div>
+           <!-- menu -->
           <div class="header__menu">
             <ul class="header-ul">
-              <li><a href="#chapter1">Главная</a></li>
-              <li><a class="header-arrow_1 menu-1" href="#chapter2">Туры</a></li>
-              <li><a href="#chapter3">Страны</a></li>
-              <li><a class="header-arrow_2" href="#chapter4">Услуги</a></li>
+              <li><a href="#">Главная</a></li>
+              <li><a class="header-arrow_1" href="#">Туры</a>
+                      <!-- dropdown -->
+                        <div class="header-dropdown">
+                            <ul class="header-dropdown__child">
+                              <li><a href="#">Горящие туры</a></li>
+                              <li><a href="#">Поиск тура</a></li>
+                              <li><a href="#">Туры по Украине</a></li>
+                              <li><a href="#">Экскурсионные туры</a></li>
+                              <li><a href="#">Week end туры</a></li>
+                            </ul>
+                        </div>
+                      </li>
+                      <!-- /dropdown -->
+              <li><a href="#">Страны</a></li>
+              <li><a class="header-arrow_2" href="#">Услуги</a>
+                      <!-- dropdown2 -->
+              <div class="header-dropdown2">
+                    <ul class="header-dropdown__child2">
+                      <li><a href="#">Авиабилеты</a></li>
+                      <li><a href="#">Визовая поддержка</a></li>
+                      <li><a href="#">Индивидуальный трансфер</a></li>
+                      <li><a href="#">Подарочные сертификаты</a></li>
+                      <li><a href="#">Бронирование отелей и апартаментов</a></li>
+                      <li><a href="#">Как забронировать и оплатить тур</a></li>
+                    </ul>
+              </div>
+            </li>
+                      <!-- /dropdown2 -->
               <li><a href="#chapter2">О компании</a></li>
               <li><a href="#chapter6">Контакты</a></li>
             </ul>
           </div>
         </div>
       </div> 
-      <div class="header-dropdown" id="menu-1">
-        <!-- <button class="mainmenubtn">Главное меню</button> -->
-        <div class="header-dropdown__child">
-          <a href="#">Горящие туры</a>
-          <a href="#">Поиск тура</a>
-          <a href="#">Туры по Украине</a>
-          <a href="#">Экскурсионные туры</a>
-          <a href="#">Week end туры</a>
-        </div>
-      </div>
-      <div class="header-dropdown-2" id="menu-2">
-        <!-- <button class="mainmenubtn">Главное меню</button> -->
-        <div class="header-dropdown__child2">
-          <a href="#">Авиабилеты</a>
-          <a href="#">Визовая поддержка</a>
-          <a href="#">Индивидуальный трансфер</a>
-          <a href="#">Подарочные сертификаты</a>
-          <a href="#">Бронирование отелей и апартаментов</a>
-          <a href="#">Как забронировать и оплатить тур</a>
-        </div>
-      </div>
     </div>
+
     <div class="header-sentense">
       <h1 class="header__text">Лучшие предложения по солнечному Египту из Харькова</h1>
       <button class="button button-callback header-button">Получить предложение</button>
@@ -76,8 +81,12 @@
         <li><a class="anchor" href="#chapter8"></a></li>
         <li><a class="anchor" href="#chapter9"></a></li>
       </ul>
-    </div> 
+    </div>
+    </div>
   </div>
- 
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="js/script.js"></script>
+  
 </body>
 </html>

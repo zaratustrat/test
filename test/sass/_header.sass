@@ -1,133 +1,153 @@
 .header
- padding: 10px 0 20px
- background: url('../img/header/bacground.png')no-repeat 
- background-size: cover
- &-common 
-  display: flex
-  justify-content: space-between 
-  color: white 
-  margin-bottom: 233px
- &-contacts__menu 
-   max-width: 760px 
-   width: 100% 
- &-text-icon 
-  display: flex
-  justify-content: flex-end
-  margin: 14px 0 17px 
- &-text 
-  display: flex 
-  margin-right: 60px
-  font-size: 14px
- &-text__address 
-  margin-right: 61px 
-  position: relative 
-  &:before
-   content: '' 
-   background: url('../img/header/icon1.png')no-repeat
-   width: 13px 
-   height: 18px  
-   position: absolute 
-   left: -32px
- &-text__viber 
-  position: relative 
-  &:before
-   content: '' 
-   background: url('../img/header/icon2.png')no-repeat
-   width: 17px 
-   height: 17px  
-   position: absolute 
-   left: -32px 
-
- &-icon 
-  display: flex
- &-icon__faysbook 
-  margin-right: 25px 
-
- &-ul 
-  display: flex
-  align-items: center
-  justify-content: space-around
-  height: 44px  
-  background: $primary-bg-color
-  border-radius: 10px
- &-arrow_1
-  position: relative 
-  &:after 
-   content: ''
-   background: url('../img/header/header-arrow.png')no-repeat center 
-   width: 16px 
-   height: 8px 
-   position: absolute 
-   top: 9px
-   left: 46px 
-   display: block
- &-arrow_2 
-  position: relative 
-  &:after 
-   content: ''
-   background: url('../img/header/header-arrow.png')no-repeat center 
-   width: 16px 
-   height: 8px 
-   position: absolute 
-   top: 9px 
-   left: 60px 
-   display: block
- a 
-  color: black  
-  font-size: 18px 
-  font-weight: bold
- &-dropdown, &-dropdown-2 
-  display: flex
-  align-items: center
-  justify-content: center
-  background-color: rgba(#3591c8, 0.52)
-  &__child, &__child2 
-   display: flex
-   flex-direction: column
-     
-   a
+  padding: 10px 0 20px
+  background: url('../img/header/bacground.png')no-repeat  
+  background-size: cover 
+ 
+  &-common 
+    display: flex
+    justify-content: space-between 
     color: white 
-    font-size: 14px 
-    margin-bottom: 15px 
+    margin-bottom: 233px
+  &-contacts__menu 
+    max-width: 760px 
+    width: 100% 
+  &-text-icon 
+    display: flex
+    justify-content: flex-end
+    margin: 14px 0 17px 
+  &-text 
+    display: flex 
+    margin-right: 60px
+    font-size: 14px
+  &-text__address 
+    margin-right: 61px 
+    position: relative 
+    &:before
+      content: '' 
+      background: url('../img/header/icon1.png')no-repeat
+      width: 13px 
+      height: 18px  
+      position: absolute 
+      left: -32px
+  &-text__viber 
+    position: relative 
+    &:before
+      content: '' 
+      background: url('../img/header/icon2.png')no-repeat
+      width: 17px 
+      height: 17px  
+      position: absolute 
+      left: -32px 
+  &-icon 
+    display: flex
+  &-icon__faysbook 
+    margin-right: 25px 
+
+  // ==== menu ==== 
+  &-ul 
+    display: flex
+    align-items: center
+    justify-content: space-around
+    height: 44px  
+    background: $primary-bg-color
+    border-radius: 10px
+  &-arrow_1
+    position: relative 
+    display: block 
+    &:after 
+      content: ''
+      background: url('../img/header/header-arrow.png')no-repeat center 
+      width: 16px 
+      height: 8px 
+      position: absolute 
+      top: 9px
+      left: 46px 
+  &-arrow_2 
+    position: relative 
+    display: block 
+    &:after 
+      content: ''
+      background: url('../img/header/header-arrow.png')no-repeat center 
+      width: 16px 
+      height: 8px 
+      position: absolute 
+      top: 9px 
+      left: 60px
+  a 
+    color: black  
+    font-size: 18px 
     font-weight: normal
- &-dropdown 
-  width: 194px
-  height: 189px 
- &-dropdown-2 
-  width: 239px 
-  height: 253px
- &-dropdown__child2
-  width: 181px 
-  height: 213px      
- &-sentense
-   padding-left: 330px 
-   max-width: 1352px 
-   width: 100% 
-   height: 228px 
-   background-color: rgba(#3591c8, 0.52)
-   margin-bottom: 139px
- &__text 
-  font-size: 30px 
-  color: white  
-  margin: 66px 0 41px 
- &-button 
-  width: 254px 
-  height: 48px  
- &-anchors  
-  padding-left: 330px 
-  margin-bottom: 27px 
- .anchors-ul 
-   display: flex
-   width: 71px
-   justify-content: space-between
- .anchor 
-  width: 15px 
-  height: 15px 
-  border-radius: 50% 
-  background: #ccecf1 
-  display: block 
-  &:hover 
-   background: $primary-bg-color   
+    display: block
+    &:hover 
+      font-weight: bold 
+   
+  &-dropdown, &-dropdown2 
+    display: flex
+    align-items: center
+    justify-content: center
+    background-color: rgba(#3591c8, 0.9)
+    &__child, &__child2 
+    display: flex
+    flex-direction: column
+    li  
+      margin-bottom: 15px 
+    a
+      color: white 
+      font-size: 14px  
+      font-weight: normal
+  &-dropdown 
+    width: 194px
+    height: 189px 
+    position: absolute 
+    top: 110px
+    left: 873px
+    &__child 
+      width: 138px 
+      height: 145px
+  &-dropdown2
+    position: absolute
+    top: 110px
+    left: 1104px 
+    width: 239px 
+    height: 253px
+  &-dropdown__child2
+      width: 181px 
+      height: 213px 
+  .menu-1 
+    position: relative 
+  .menu-2 
+    position: relative 
+
+  // ==== sentense ====
+  &-sentense
+    padding: 40px 0 0 330px 
+    max-width: 1352px 
+    width: 100% 
+    height: 228px 
+    background-color: rgba(#3591c8, 0.7)
+    margin-bottom: 139px
+  &__text 
+    font-size: 30px 
+    color: white  
+    margin: 26px 0 41px 
+  &-button 
+    width: 254px 
+    height: 48px  
+  &-anchors  
+    padding-left: 330px 
+    margin-bottom: 27px 
+  .anchors-ul 
+    display: flex
+    width: 71px
+    justify-content: space-between
+  .anchor 
+    width: 15px 
+    height: 15px 
+    border-radius: 50% 
+    background: #ccecf1 
+    display: block 
+    &:hover 
+      background: $primary-bg-color   
 
 
   
