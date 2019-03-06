@@ -41,7 +41,7 @@
   &-icon 
     display: flex
   &-icon__faysbook 
-    margin-right: 25px 
+    margin-right: 25px
 
   // ==== menu ==== 
   &-ul 
@@ -61,7 +61,8 @@
       height: 8px 
       position: absolute 
       top: 9px
-      left: 46px 
+      left: 46px  
+     
   &-arrow_2 
     position: relative 
     display: block 
@@ -77,47 +78,49 @@
     color: black  
     font-size: 18px 
     font-weight: normal
-    display: block
     &:hover 
       font-weight: bold 
-   
-  &-dropdown, &-dropdown2 
-    display: flex
-    align-items: center
-    justify-content: center
+  &-dropdown, &-dropdown2
+    position: absolute
     background-color: rgba(#3591c8, 0.9)
-    &__child, &__child2 
-    display: flex
-    flex-direction: column
-    li  
+    li
       margin-bottom: 15px 
     a
       color: white 
       font-size: 14px  
       font-weight: normal
-  &-dropdown 
+  &-dropdown
+    display: none
     width: 194px
     height: 189px 
-    position: absolute 
-    top: 110px
-    left: 873px
-    &__child 
+    top: 44px
+    left: -18px
+    &__child
+      margin: 22px auto  
       width: 138px 
       height: 145px
+  .menu1 
+    position: relative
+    padding: 12px 15px
+    &:hover 
+      &>.header-dropdown  
+        display: block 
   &-dropdown2
-    position: absolute
-    top: 110px
-    left: 1104px 
+    display: none
+    top: 44px
+    left: -20px 
     width: 239px 
     height: 253px
   &-dropdown__child2
       width: 181px 
       height: 213px 
-  .menu-1 
-    position: relative 
-  .menu-2 
-    position: relative 
-
+      margin: 20px auto 
+  .menu2
+    position: relative
+    padding: 12px 16px
+    &:hover 
+      &>.header-dropdown2 
+        display: block 
   // ==== sentense ====
   &-sentense
     padding: 40px 0 0 330px 
@@ -147,9 +150,76 @@
     background: #ccecf1 
     display: block 
     &:hover 
-      background: $primary-bg-color   
+      background: $primary-bg-color
+  //  ==== /sentense ====   
 
+@media (max-width: 1199px)
+  .container
+    width: 941px
+    .header 
+      &-common 
+        flex-direction: column 
+        align-items: center
+  .header-sentense 
+        padding: 40px 0 0 115px
+  .header-anchors 
+        justify-content: center
+        display: flex
+        padding: 0        
+@media (max-width: 992px) 
+  .container
+    width: 767px
+  .header-sentense 
+    padding: 0
+    display: flex
+    flex-direction: column
+    align-items: center 
+    margin-bottom: 40px
+  .header 
+      &-text-icon 
+        justify-content: center 
+        align-items: center
+      &-text 
+        flex-direction: column 
+        margin-right: 0
+      &-text__address
+            margin: 0 60px 10px 0  
+      &__text 
+        text-align: center
+        margin: 60px 0 41px
+@media (max-width: 768px)
+  .container
+    width: 576px 
+  .header 
+    &__text 
+      font-size: 26px   
+@media(max-width: 577px)
+  .container
+    width: 95% 
+    .header 
+      &-text-icon 
+        flex-direction: column-reverse 
+      &-icon 
+        margin-bottom: 10px   
+      &-text__address 
+        margin: 0 0px 10px 0 
+      &-ul 
+        flex-direction: column
+        width: 280px 
+        height: auto
+      &-ul>li 
+          padding: 13px
+      &__menu 
+        justify-content: center
+        display: flex
+      &-dropdown, &-dropdown2
+        background-color: rgba(#3591c8, 1)  
+      &-dropdown 
+        left: -62px 
+      &-dropdown2 
+        left: -78px    
 
+             
   
   
 

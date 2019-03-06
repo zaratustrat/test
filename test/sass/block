@@ -1,0 +1,79 @@
+// // ==== menu ==== 
+  &-ul 
+    display: flex
+    align-items: center
+    justify-content: space-around
+    height: 44px  
+    background: $primary-bg-color
+    border-radius: 10px
+  &-arrow_1
+    position: relative 
+    display: block 
+    &:after 
+      content: ''
+      background: url('../img/header/header-arrow.png')no-repeat center 
+      width: 16px 
+      height: 8px 
+      position: absolute 
+      top: 9px
+      left: 46px  
+     
+  &-arrow_2 
+    position: relative 
+    display: block 
+    &:after 
+      content: ''
+      background: url('../img/header/header-arrow.png')no-repeat center 
+      width: 16px 
+      height: 8px 
+      position: absolute 
+      top: 9px 
+      left: 60px
+  a 
+    color: black  
+    font-size: 18px 
+    font-weight: normal
+    display: block
+    &:hover 
+      font-weight: bold 
+  &-dropdown, &-dropdown2 
+    position: absolute
+    background-color: rgba(#3591c8, 0.9)
+    li
+      display: block  
+      margin-bottom: 15px 
+    a
+      color: white 
+      font-size: 14px  
+      font-weight: normal
+  &-dropdown
+    display: none
+    width: 194px
+    height: 189px 
+    top: 110px
+    left: 873px
+    &__child
+      margin: 22px auto  
+      width: 138px 
+      height: 145px
+  .menu1
+    transition: height 0.3s, opacity 0.4s
+    &:hover 
+      &>.header-dropdown  
+        display: block 
+        transition: height 0.3s, opacity 0.4s
+        
+           
+  &-dropdown2
+    top: 110px
+    left: 1104px 
+    width: 239px 
+    height: 253px
+  &-dropdown__child2
+      width: 181px 
+      height: 213px 
+      margin: 20px auto 
+  .menu2
+    &:hover 
+      &>.header-dropdown2 
+        display: block 
