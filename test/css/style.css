@@ -537,6 +537,8 @@ template {
 }
 
 .header .menu1 {
+  -webkit-transition: height 0.4s, opacity 0.5s;
+  transition: height 0.4s, opacity 0.5s;
   position: relative;
   padding: 12px 15px;
 }
@@ -733,6 +735,7 @@ template {
   }
   .container .header-dropdown {
     left: -62px;
+    z-index: 3;
   }
   .container .header-dropdown2 {
     left: -78px;
