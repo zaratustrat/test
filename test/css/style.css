@@ -762,23 +762,11 @@ template {
   font-size: 20px;
 }
 
-.main .slider-common {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: auto;
-  width: 97%;
-}
-
 .main-wrap__card {
-  display: block;
   background: #f8f7f7;
   border-radius: 10px;
   border: 1px solid red;
-  width: 519px;
-  height: 202px;
   padding: 13px;
-  margin: 0 30px 0 30px;
 }
 
 .main-card {
