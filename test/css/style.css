@@ -743,7 +743,7 @@ template {
 }
 
 .main {
-  padding: 70px 0 70px;
+  padding: 70px 50px 70px;
 }
 
 .main-subtitle {
@@ -767,7 +767,7 @@ template {
   display: -ms-flexbox;
   display: flex;
   margin: auto;
-  width: 90%;
+  width: 97%;
 }
 
 .main-wrap__card {
@@ -775,9 +775,9 @@ template {
   background: #f8f7f7;
   border-radius: 10px;
   border: 1px solid red;
-  width: 550px;
-  height: 203px;
-  padding: 10px;
+  width: 519px;
+  height: 202px;
+  padding: 13px;
   margin: 0 30px 0 30px;
 }
 
@@ -801,7 +801,7 @@ template {
 
 .main .card-text {
   display: block;
-  width: 312px;
+  width: 271px;
   height: 145px;
 }
 
@@ -825,6 +825,7 @@ template {
 }
 
 .main .small-text {
+  font-size: 14px;
   color: #b1b1b1;
   margin-bottom: 30px;
 }
