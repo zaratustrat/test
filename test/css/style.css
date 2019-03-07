@@ -537,14 +537,14 @@ template {
 }
 
 .header .menu1 {
-  -webkit-transition: height 0.4s, opacity 0.5s;
-  transition: height 0.4s, opacity 0.5s;
   position: relative;
   padding: 12px 15px;
 }
 
 .header .menu1:hover > .header-dropdown {
   display: block;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .header-dropdown2 {
@@ -740,6 +740,125 @@ template {
   .container .header-dropdown2 {
     left: -78px;
   }
+}
+
+.main {
+  padding: 70px 0 70px;
+}
+
+.main-subtitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 70px;
+}
+
+.main-hot {
+  color: #fbd341;
+  margin-right: 32px;
+}
+
+.main h4 {
+  font-size: 20px;
+}
+
+.main .slider-common {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  width: 90%;
+}
+
+.main-wrap__card {
+  display: block;
+  background: #f8f7f7;
+  border-radius: 10px;
+  border: 1px solid red;
+  width: 550px;
+  height: 203px;
+  padding: 10px;
+  margin: 0 30px 0 30px;
+}
+
+.main-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .card-img {
+  width: 187px;
+  height: 178px;
+  margin-right: 29px;
+}
+
+.main .card-text {
+  display: block;
+  width: 312px;
+  height: 145px;
+}
+
+.main .subtitle-card {
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.main .small-data {
+  font-size: 14px;
+  color: #b1b1b1;
+  margin-bottom: 18px;
+}
+
+.main .small-data:after {
+  content: '';
+  border-bottom: 1px solid #eae9e9;
+  display: block;
+  height: 2px;
+}
+
+.main .small-text {
+  color: #b1b1b1;
+  margin-bottom: 30px;
+}
+
+.main .cost {
+  font-size: 20px;
+  position: relative;
+}
+
+.main sup {
+  top: 0;
+  left: 87px;
+  color: #b1b1b1;
+  position: absolute;
+  font-size: 11px;
+  margin-bottom: 10px;
+  display: inline-table;
+}
+
+.main .slider-button {
+  border-radius: 50%;
+  width: 37px;
+  height: 37px;
+  font-size: 22px;
+  padding: 0 0 5px 3px;
+}
+
+.main-cost__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 *, *:after, *:before {
