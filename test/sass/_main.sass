@@ -1,8 +1,9 @@
 .main
-  padding: 70px 50px 70px
+  padding: 70px 50px 70px 
   &-subtitle
     display: flex 
-    margin-bottom: 70px 
+    margin-bottom: 70px  
+    
   &-hot 
     color: $primary-bg-color 
     margin-right: 32px 
@@ -11,9 +12,11 @@
   &-wrap__card 
     background: #f8f7f7
     border-radius: 10px
-    border: 1px solid red  
     padding: 13px  
-    
+    max-width: 519px
+    width: 100%
+    min-height: 202px 
+    margin: 0 35px 10px 35px
   &-card 
     display: flex
     justify-content: space-between 
@@ -34,11 +37,14 @@
     font-size: 14px 
     color: #b1b1b1 
     margin-bottom: 18px 
+    position: relative 
     &:after 
       content: ''
-      border-bottom: 1px solid #eae9e9 
+      border-bottom: 1px solid #eae9e9
       display: block 
-      height: 2px 
+      width: 100%
+      position: absolute 
+      top: 22px 
   .small-text 
     font-size: 14px
     color: #b1b1b1  
@@ -64,5 +70,61 @@
     display: flex
     justify-content: space-between  
 
-   
- 
+  .arrow
+    width: 20px
+    height: 19px 
+    position: absolute 
+    top: 90px  
+    z-index: 9
+    &:hover
+        cursor: pointer
+    &_right  
+      right: -17px
+      background: url('../img/slider/arrow-right.png')no-repeat center
+       
+    &_left
+      left: -17px
+      background: url('../img/slider/arrow-left.png')no-repeat center
+       
+@media (max-width: 1199px)
+  .container
+    width: 941px
+@media (max-width: 992px) 
+  .slider-common 
+    height: 240px
+  .main 
+    &-wrap__card 
+      height: 235px !important 
+    .arrow 
+       top: 110px    
+
+@media (max-width: 768px)
+  .main 
+    &-wrap__card 
+      max-width: 600px
+@media(max-width: 577px)
+  .main 
+    padding: 30px 20px 30px
+    &-subtitle 
+      flex-direction: column 
+      text-align: center 
+      margin-bottom: 20px
+    &-hot 
+      margin: 10px auto 
+    h4 
+      margin: 10px auto   
+      
+    &-wrap__card 
+      width: 230px 
+      border: 1px solid red 
+    &-card 
+      display: flex
+      flex-direction: column  
+    .card-img 
+      margin-right: 0 
+    .card-text 
+      width: auto 
+      height: auto 
+      text-align: center 
+    .arrow 
+      top: 175px   

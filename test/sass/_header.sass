@@ -90,7 +90,6 @@
       font-size: 14px  
       font-weight: normal
   &-dropdown
-    display: none
     width: 194px
     height: 189px 
     top: 44px
@@ -104,11 +103,10 @@
     position: relative
     padding: 12px 15px
     &:hover 
-      &>.header-dropdown  
+      &>.header-dropdown 
         display: block  
         transition: 0.5s
   &-dropdown2
-    display: none
     top: 44px
     left: -20px 
     width: 239px 
@@ -122,7 +120,7 @@
     padding: 12px 16px
     &:hover 
       &>.header-dropdown2 
-        display: block 
+        display: block
   // ==== sentense ====
   &-sentense
     padding: 40px 0 0 330px 
@@ -198,7 +196,18 @@
 @media(max-width: 577px)
   .container
     width: 95% 
-    .header 
+    .header
+      .menu1 
+        &:hover 
+          &>.header-dropdown 
+            display: none 
+      .menu2 
+        &:hover 
+          &>.header-dropdown2
+            display: none 
+      &>.header-dropdown 
+        display: block  
+        transition: 0.5s 
       &-text-icon 
         flex-direction: column-reverse 
       &-icon 
