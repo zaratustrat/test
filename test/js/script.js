@@ -60,5 +60,10 @@ $(window).resize(function () {
         $(this).find('.header-dropdown2').toggleClass('visible');
       }
     );
+    $('.menu3').click(
+      function () {
+        $(this).find('.sentence-dropdown3').toggleClass('visible');
+      }
+    );
   }
 });

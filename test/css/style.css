@@ -17,6 +17,11 @@
   outline: none;
 }
 
+.input {
+  font-size: 18px;
+  outline: none;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -500,7 +505,7 @@ template {
 .header a {
   color: black;
   font-size: 18px;
-  font-weight: normal;
+  font-weight: bold;
 }
 
 .header a:hover {
@@ -995,20 +1000,118 @@ template {
   margin-right: 57px;
 }
 
-.advantages ::-webkit-scrollbar {
-  width: 20px;
+.sentence {
+  padding: 48px 0 42px;
+  background: url("../img/sentence/background.png") no-repeat;
+  background-size: cover;
 }
 
-.advantages ::-webkit-scrollbar-track {
-  background: #e1e0e0;
-  height: 195px;
+.sentence-subtitle {
+  color: white;
+  margin-bottom: 34px;
 }
 
-.advantages ::-webkit-scrollbar-thumb {
-  background: red;
-  border-radius: 50%;
+.sentence-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 131px;
+  position: relative;
+}
+
+.sentence-form:before {
+  content: '';
+  position: absolute;
+  background: #050400;
+  opacity: .4;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.sentence-arrow_3 {
+  color: #cdcfd1;
+  position: relative;
+  display: block;
+  z-index: 9;
+}
+
+.sentence-arrow_3:after {
+  content: '';
+  background: url("../img/sentence/arrows.png") no-repeat center;
+  width: 16px;
   height: 8px;
-  width: 8px;
+  position: absolute;
+  top: 5px;
+  left: 120px;
+}
+
+.sentence .menu3 {
+  margin-bottom: 7px;
+  position: relative;
+  padding: 12px 15px;
+}
+
+.sentence .menu3:hover > .sentence-dropdown {
+  display: block;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.sentence-dropdown li a {
+  font-size: 18px;
+  color: black;
+  line-height: 25px;
+}
+
+.sentence-dropdown {
+  display: none;
+  width: 179px;
+  height: 124px;
+  background: #f8f7f7;
+  position: absolute;
+  z-index: 4;
+  padding: 16px 0 0 16px;
+  left: 777px;
+}
+
+.sentence .input {
+  z-index: 2;
+  border: none;
+  background: none;
+  border-bottom: 1px solid #67707a;
+  padding: 0 0 7px 14px;
+}
+
+.sentence .input::-webkit-input-placeholder {
+  color: #b2b4b6;
+}
+
+.sentence .input-name {
+  width: 137px;
+}
+
+.sentence .input-email {
+  width: 189px;
+}
+
+.sentence .input-phone {
+  width: 152px;
+}
+
+.sentence .hot {
+  color: #fbd341;
+}
+
+.sentence .form__button {
+  width: 254px;
+  height: 48px;
+  z-index: 9;
 }
 
 *, *:after, *:before {
@@ -1045,6 +1148,10 @@ a {
 
 .visible {
   display: none;
+}
+
+.subtitle-h2 {
+  font-size: 24px;
 }
 
 @media (max-width: 1199px) {
