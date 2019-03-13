@@ -307,9 +307,9 @@
         </div>
         <div class="sentence-common">
           <div class="sentence-form">
-            <input type="text" name="user_name" class="input input-name form__input" placeholder="Имя">
-            <input type="tel" name="user_email" class="input input-email form__input" placeholder="Email">
-            <input type="phone" name="user_phone" class="input input-phone form__input" placeholder="Телефон">
+            <input type="text" name="user_name" class="input input-name " placeholder="Имя">
+            <input type="tel" name="user_email" class="input input-email " placeholder="Email">
+            <input type="phone" name="user_phone" class="input input-phone phone" placeholder="Телефон">
               <ul class="sentence-menu ">
                <li class="menu"><a class="sentence-arrow_3" href="javascript:void(0)">Страна тура</a>
                   <ul class="sentence-dropdown visible">
@@ -387,10 +387,21 @@
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-
+    <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/script.js"></script> 
-    <script src="js/jquery.maskedinput.min.js"></script>
+    <script>
+      (function ($) {
+          $(window).load(function () {
+
+            $(".advantages-common").mCustomScrollbar({
+              theme: "rounded-dark"
+            });
+
+          });
+        })(jQuery);
+    </script> 
+   
     
 </body>
 
